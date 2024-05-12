@@ -1,0 +1,107 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #888888;
+  --accent: #b9fd50;
+
+  --border-light: #ffffff3f;
+  --card-bg: #141414;
+  --background: #0e0e0e;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+html {
+  @apply no-scrollbar;
+}
+
+body {
+  @apply font-Inter bg-background text-white;
+}
+
+p {
+  @apply leading-loose;
+}
+
+/* lenis */
+/* html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+} */
+
+.link {
+  line-height: 180%;
+  height: 38px;
+  overflow: hidden;
+}
+
+.link:hover .char,
+.link.play .char {
+  transform: translateY(-100%);
+}
+
+.link .link_block:last-child {
+  color: inherit;
+}
+
+.link .char {
+  display: inline-block;
+  transition: transform 0.6s cubic-bezier(0.76, 0, 0.024, 1);
+}
+
+.link_block .char {
+  display: inline-block;
+}
+
+.char:nth-child(1) {
+  transition-delay: 0s;
+}
+.char:nth-child(2) {
+  transition-delay: 0.03s;
+}
+.char:nth-child(3) {
+  transition-delay: 0.06s;
+}
+.char:nth-child(4) {
+  transition-delay: 0.09s;
+}
+.char:nth-child(5) {
+  transition-delay: 0.12s;
+}
+.char:nth-child(6) {
+  transition-delay: 0.15s;
+}
+.char:nth-child(7) {
+  transition-delay: 0.18s;
+}
+.char:nth-child(8) {
+  transition-delay: 0.21s;
+}
+.char:nth-child(9) {
+  transition-delay: 0.24s;
+}
+.char:nth-child(10) {
+  transition-delay: 0.27s;
+}

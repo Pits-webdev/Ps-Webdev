@@ -1,0 +1,24 @@
+---
+import { NavLinks } from "../constans/links";
+---
+
+<div
+  id='mobile'
+  class='absolute w-full h-[calc(100vh-104px)] bg-background hidden'
+>
+  <nav class='w-full h-full flex flex-col justify-center gap-8'>
+    {
+      NavLinks.map(({ path, name }) => (
+        <div>
+          <a class='text-4xl text-accent' href={path}>
+            {name}
+          </a>
+        </div>
+      ))
+    }
+
+    <div>
+      <a class='text-4xl text-accent' href='/kontakt'>kontakt</a>
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,54 @@
+---
+import Link from "../Link.astro";
+---
+
+<section class='w-full'>
+  <div class='w-full absolute top-[108px] left-0 -z-10'>
+    <img class='object-cover' src='/images/star-bg.png' alt='star background' />
+  </div>
+  <div class='container mt-8 tablet:mt-16 laptop:mt-36'>
+    <div class='w-full h-full'>
+      <h1 class='text-2xl tablet:text-4xl max-w-[834px] text-center mx-auto'>
+        Digitale Erlebnisse mit Strategie
+      </h1>
+      <p class='text-gray max-w-[800px] text-center mx-auto mt-8'>
+        Ich erstelle digitale Produkte, die führende globale Marken in die Lage
+        versetzen, ihre Botschaften an die digitale Haustür der Verbraucher der
+        Welt zu liefern.
+      </p>
+    </div>
+
+    <div
+      class='flex flex-col tablet:flex-row justify-center items-center gap-8 tablet:gap-16 mt-16'
+    >
+      <Link
+        BtnStyle='text-black bg-accent px-12 py-1 rounded-2xl ring-1 ring-accent'
+        title='Referenzen'
+        path='referenzen'
+      />
+
+      <Link
+        BtnStyle='text-white bg-background px-12 py-1 rounded-2xl ring-1 ring-borderLight'
+        title='Kontakt'
+        path='kontakt'
+      />
+    </div>
+
+    <div
+      class='w-full h-full flex flex-col items-center justify-center gap-3 mt-12 tablet:flex-row tablet:gap-8 laptop:gap-16 desktop:gap-32'
+    >
+      <p class='flex items-center'>
+        <span class='mr-3'><img src='/images/check.png' alt='check' /></span
+        >Webdesign
+      </p>
+      <p class='flex items-center'>
+        <span class='mr-3'><img src='/images/check.png' alt='check' /></span
+        >Redesign
+      </p>
+      <p class='flex items-center'>
+        <span class='mr-3'><img src='/images/check.png' alt='check' /></span
+        >Webentwicklung
+      </p>
+    </div>
+  </div>
+</section>
