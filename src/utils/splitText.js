@@ -7,7 +7,7 @@ export const splitText = (elements) => {
     element.innerHTML = "";
 
     let textContainer = document.createElement("div");
-    textContainer.classList.add("elemet-block");
+    textContainer.classList.add("element-block");
 
     for (let char of innerText) {
       let span = document.createElement("span");

@@ -1,7 +1,7 @@
-import { anime } from "./gsap";
+import { splitText } from "../utils/splitText";
+import gsap from "gsap";
 
 /* handleMobile */
-
 const menuBtn = document.querySelector("#menu_btn");
 const mobile = document.querySelector("#mobile");
 
@@ -16,3 +16,9 @@ menuBtn.addEventListener("click", () => {
 
   mobileOpen = !mobileOpen;
 });
+
+/* gsap */
+const elements = document.querySelectorAll(".element");
+
+splitText(elements);
+gsap.to(".loader .char", { y: 0, stagger: 0.02, delay: 0.3, duration: 0.2 });

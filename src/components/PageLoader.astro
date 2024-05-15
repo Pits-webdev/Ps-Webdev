@@ -3,22 +3,16 @@
 ---
 
 <div
-  class='w-full h-screen flex items-center justify-center absolute top-0 left-0 bg-red-300'
+  class='w-full h-screen flex items-center justify-center absolute top-0 left-0 bg-background'
 >
-  <p class='loader element text-2xl'>Webdeveloper</p>
+  <h1 class='element loader text-6xl overflow-hidden leading-[93.999%]'>
+    Developer
+  </h1>
 </div>
 
-<script>
-  import gsap from "gsap";
-  import { splitText } from "../utils/splitText";
-  import { anime } from "../js/gsap";
-
-  const elements = document.querySelectorAll(".element");
-
-  async function lo() {
-    await splitText(elements);
-    gsap.to(".loader .char", { y: "50px", stagger: 0.3 });
+<style is:global>
+  .loader .char {
+    transform: translateY(50px);
+    transition: transform 0.5s;
   }
-
-  lo();
-</script>
+</style>
