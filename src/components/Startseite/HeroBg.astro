@@ -1,0 +1,31 @@
+---
+
+---
+
+<div class='container w-full h-screen flex items-center'>
+  <div class='img w-full h-[200px]'>
+    <div class='y-anime'></div>
+  </div>
+</div>
+
+<style>
+  .img {
+    background-image: url("../../../images/hero-background-top-mask.png");
+  }
+
+  .y-anime {
+    transform: translateY(-100px);
+    -webkit-mask-image: url("../../../images/hero-background-top-mask.png");
+    mask-image: url("../../../images/hero-background-top-mask.png");
+    mask-size: cover;
+    background: linear-gradient(
+      180deg,
+      rgba(183, 164, 251, 0) 0,
+      #b7a4fb 100%,
+      #8562ff 100%,
+      rgba(133, 98, 255, 0) 0%
+    );
+
+    height: 200px;
+  }
+</style>

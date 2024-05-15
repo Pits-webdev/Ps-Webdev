@@ -1,0 +1,24 @@
+---
+
+---
+
+<div
+  class='w-full h-screen flex items-center justify-center absolute top-0 left-0 bg-red-300'
+>
+  <p class='loader element text-2xl'>Webdeveloper</p>
+</div>
+
+<script>
+  import gsap from "gsap";
+  import { splitText } from "../utils/splitText";
+  import { anime } from "../js/gsap";
+
+  const elements = document.querySelectorAll(".element");
+
+  async function lo() {
+    await splitText(elements);
+    gsap.to(".loader .char", { y: "50px", stagger: 0.3 });
+  }
+
+  lo();
+</script>

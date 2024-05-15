@@ -1,3 +1,5 @@
+import { anime } from "./gsap";
+
 /* handleMobile */
 
 const menuBtn = document.querySelector("#menu_btn");
