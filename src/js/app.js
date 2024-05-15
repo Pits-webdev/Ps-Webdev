@@ -19,6 +19,8 @@ menuBtn.addEventListener("click", () => {
 
 /* gsap */
 const elements = document.querySelectorAll(".element");
-
 splitText(elements);
-gsap.to(".loader .char", { y: 0, stagger: 0.02, delay: 0.3, duration: 0.2 });
+
+const tl = gsap.timeline();
+tl.to(".loader .char", { y: 0, stagger: 0.02, delay: 0.3, duration: 0.2 });
+tl.to(".page_loader", { y: "-100%", duration: 0, delay: 2 });
