@@ -2,14 +2,15 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Startseite/Hero.astro";
 import BentoGrid from "../components/Startseite/BentoGrid.astro";
-import Link from "../components/Link.astro";
 import HeroBg from "../components/Startseite/HeroBg.astro";
+import PageLoader from "../components/PageLoader.astro";
 ---
 
 <Layout title='Welcome to Astro.'>
   <main>
+    <PageLoader />
     <Hero />
     <BentoGrid />
-    <HeroBg />
+    <!-- <HeroBg /> -->
   </main>
 </Layout>

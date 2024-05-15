@@ -3,16 +3,57 @@
 ---
 
 <div
-  class='page_loader w-full h-screen flex items-center justify-center absolute top-0 left-0 bg-background'
+  class='page_loader w-full h-screen flex flex-col items-center justify-center gap-y-8 absolute top-0 left-0 bg-background'
 >
-  <h1 class='element loader text-6xl overflow-hidden leading-[93.999%]'>
-    Developer
+  <div class='overflow-hidden'>
+    <svg
+      class='logo_loader'
+      width='206.00012px'
+      height='87.00012px'
+      viewBox='0 0 206.00012 87.00012'
+      version='1.1'
+      xmlns:xlink='http://www.w3.org/1999/xlink'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <g id='Logo'>
+        <g id='P'>
+          <path
+            d='M0 0.0927097C0 0.0927097 49.7253 -0.115887 71.6432 0.0927097C101.545 0.377288 104.917 39.5458 75.0877 44.0598C64.8413 44.0598 28.1083 44.0598 28.1083 44.0598L28.1083 60.4247L66.0336 60.4293L66.0336 86.9994L0 86.9994L7.30939e-06 60.4293L26.9205 60.4293L26.9205 26.6699L0 26.6699L0 0.0927097Z'
+            id='P'
+            fill='#B9FD50'
+            fill-rule='evenodd'
+            stroke='none'></path>
+          <path
+            d='M28.2405 26.7541C28.2405 26.7541 60.6347 26.7541 75.4839 26.7541C88.4388 26.8215 89.6038 42.1358 73.1086 43.1614C61.2641 43.1614 28.2405 43.1614 28.2405 43.1614L28.2405 26.7541Z'
+            id='Rectangle'
+            fill='#171717'
+            fill-rule='evenodd'
+            stroke='none'></path>
+        </g>
+        <g id='S' transform='translate(109.530495 0.092926055)'>
+          <path
+            d='M22.6168 0C39.8011 0 96.3817 0 96.3817 0L96.3817 26.6654C96.3817 26.6654 37.708 26.6615 19.3148 26.6615C7.88152 26.7283 5.15077 42.5147 23.8016 42.8122C43.8246 42.8122 57.1572 42.8122 74.6074 42.8122C104.153 44.5373 104.044 87.1203 72.4959 86.9064C44.1987 86.9064 0.312805 86.9068 0.312805 86.9068L0.312805 59.9637C0.312805 59.9637 58.6103 59.9637 78.0393 59.9637C90.4689 58.1569 88.3819 44.0717 74.0801 44.0717C61.1316 44.0717 40.3793 44.0717 24.9895 44.0717C-4.84797 44.6397 -10.7513 3.48228 22.6168 0Z'
+            id='s'
+            fill='#B9FD50'
+            fill-rule='evenodd'
+            stroke='none'></path>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <h1 class='element loader text-6xl overflow-hidden leading-[140%]'>
+    Digitale Erlebnisse
   </h1>
 </div>
 
 <style is:global>
+  .logo_loader {
+    transform: translateY(100px);
+    transition: transform 0.5s;
+  }
   .loader .char {
-    transform: translateY(50px);
+    transform: translateY(100px);
     transition: transform 0.5s;
   }
 </style>

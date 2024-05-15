@@ -30,7 +30,7 @@ p {
 }
 
 /* lenis */
-/* html.lenis,
+html.lenis,
 html.lenis body {
   height: auto;
 }
@@ -49,7 +49,7 @@ html.lenis body {
 
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
-} */
+}
 
 .link {
   line-height: 180%;
@@ -71,37 +71,41 @@ html.lenis body {
   transition: transform 0.6s cubic-bezier(0.76, 0, 0.024, 1);
 }
 
+/* Link animations */
 .link_block .char {
   display: inline-block;
 }
 
-.char:nth-child(1) {
+.link .char:nth-child(1) {
   transition-delay: 0s;
 }
-.char:nth-child(2) {
+.link .char:nth-child(2) {
   transition-delay: 0.03s;
 }
-.char:nth-child(3) {
+.link .char:nth-child(3) {
   transition-delay: 0.06s;
 }
-.char:nth-child(4) {
+.link .char:nth-child(4) {
   transition-delay: 0.09s;
 }
-.char:nth-child(5) {
+.link .char:nth-child(5) {
   transition-delay: 0.12s;
 }
-.char:nth-child(6) {
+.link .char:nth-child(6) {
   transition-delay: 0.15s;
 }
-.char:nth-child(7) {
+.link .char:nth-child(7) {
   transition-delay: 0.18s;
 }
-.char:nth-child(8) {
+.link .char:nth-child(8) {
   transition-delay: 0.21s;
 }
-.char:nth-child(9) {
+.link .char:nth-child(9) {
   transition-delay: 0.24s;
 }
-.char:nth-child(10) {
+.link .char:nth-child(10) {
   transition-delay: 0.27s;
+}
+.link .char:nth-child(11) {
+  transition-delay: 0.3s;
 }

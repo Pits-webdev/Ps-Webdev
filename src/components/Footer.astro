@@ -1,0 +1,88 @@
+---
+import Link from "./Link.astro";
+---
+
+<footer class='relative w-full h-full mt-16 bg-accent rounded-t-[56px]'>
+  <div class='container text-black'>
+    <span class='w-full h-[1px] inline-block absolute'></span>
+    <div class='mt-16 flex gap-16 pt-16'>
+      <div class='basis-1/3'>
+        <a href='/'>
+          <svg
+            class='scale-150'
+            width='76.000015px'
+            height='32.000053px'
+            viewBox='0 0 76.000015 32.000053'
+            version='1.1'
+            xmlns:xlink='http://www.w3.org/1999/xlink'
+            xmlns='http://www.w3.org/2000/svg'
+          >
+            <g id='Logo'>
+              <g id='P'>
+                <path
+                  d='M0 0.0341001C0 0.0341001 18.3453 -0.0426252 26.4315 0.0341001C37.4631 0.138773 38.7072 14.5456 27.7023 16.2059C23.922 16.2059 10.37 16.2059 10.37 16.2059L10.37 22.2252L24.3619 22.2269L24.3619 31.9998L0 31.9998L2.69667e-06 22.2269L9.93184 22.2269L9.93184 9.80963L0 9.80963L0 0.0341001Z'
+                  id='P'
+                  fill='var(--black)'
+                  fill-rule='evenodd'
+                  stroke='none'></path>
+                <path
+                  d='M10.4188 9.84065C10.4188 9.84065 22.3701 9.84065 27.8484 9.84065C32.6279 9.86543 33.0577 15.4983 26.972 15.8755C22.6022 15.8755 10.4188 15.8755 10.4188 15.8755L10.4188 9.84065Z'
+                  id='Rectangle'
+                  fill='var(--accent)'
+                  fill-rule='evenodd'
+                  stroke='none'></path>
+              </g>
+              <g id='S' transform='translate(40.40927 0.03413392)'>
+                <path
+                  d='M8.34403 -3.72529e-09C14.6839 -3.72529e-09 35.5583 -3.72529e-09 35.5583 -3.72529e-09L35.5583 9.80798C35.5583 9.80798 13.9117 9.80656 7.12586 9.80656C2.90773 9.8311 1.90028 15.6376 8.78118 15.7471C16.1683 15.7471 21.0871 15.7471 27.5251 15.7471C38.4255 16.3816 38.3853 32.0443 26.7461 31.9656C16.3063 31.9656 0.115364 31.9657 0.115364 31.9657L0.115364 22.0556C0.115364 22.0556 21.6232 22.0556 28.7912 22.0556C33.3769 21.3911 32.6069 16.2103 27.3305 16.2103C22.5534 16.2103 14.8972 16.2103 9.21943 16.2103C-1.78856 16.4192 -3.96649 1.28084 8.34403 -3.72529e-09Z'
+                  id='s'
+                  fill='var(--black)'
+                  fill-rule='evenodd'
+                  stroke='none'></path>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </div>
+      <div class='basis-1/3 flex flex-col items-center relative'>
+        <span class='w-[1px] h-full bg-black inline-block absolute -left-8'
+        ></span>
+
+        <h4 class='mb-2 font-bold'>Kontakt</h4>
+        <p class='py-1'>Whatsapp</p>
+        <p class='py-1'>Email</p>
+      </div>
+      <div class='basis-1/3 flex flex-col items-center relative'>
+        <span class='w-[1px] h-full bg-black inline-block absolute -left-8'
+        ></span>
+
+        <h4 class='mb-2 font-bold'>Rechtliches</h4>
+        <Link
+          BtnStyle='text-black bg-accent py-1'
+          title='Impressum'
+          path='impressum'
+        />
+        <Link
+          BtnStyle='text-black bg-accent py-1'
+          title='Datenschutz'
+          path='datenschutz'
+        />
+      </div>
+    </div>
+
+    <div class='py-12 flex justify-between items-end'>
+      <div>
+        <p class='font-bold'>Write a Email</p>
+
+        <a class='text-4xl relative' href='/kontakt'>
+          myemail@gmail.com
+          <span
+            class='absolute left-0 -bottom-1 w-full h-[1px] bg-black inline-block'
+          ></span>
+        </a>
+      </div>
+
+      <div>Copyright@ 2024</div>
+    </div>
+  </div>
+</footer>
