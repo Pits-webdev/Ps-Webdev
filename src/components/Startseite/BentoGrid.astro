@@ -7,9 +7,11 @@ import Link from "../Link.astro";
     <h2 class='text-4xl mb-16 inline-block'>Was ich tue</h2>
 
     <div class='w-full flex flex-col laptop:grid grid-cols-4 gap-8'>
+      <!-- card 1 -->
       <div
-        class='order-1 laptop:order-1 w-full h-[360px] ring-1 ring-borderLight bg-cardBg rounded-2xl p-5 flex flex-col justify-between'
+        class='relative order-1 laptop:order-1 w-full h-[360px] ring-1 ring-borderLight bg-cardBg rounded-2xl p-5 flex flex-col justify-between'
       >
+        <div class='grid_pattern absolute inset-0'></div>
         <div>
           <h3 class='text-2xl mb-8'>Unique Design</h3>
           <p class='text-gray leading-normal'>
@@ -22,9 +24,11 @@ import Link from "../Link.astro";
         </div>
       </div>
 
+      <!-- card 2 -->
       <div
-        class='order-3 laptop:order-2 w-full h-[360px] col-start-2 col-span-2 ring-1 ring-borderLight bg-cardBg rounded-2xl p-5'
+        class='relative order-3 laptop:order-2 w-full h-[360px] col-start-2 col-span-2 ring-1 ring-borderLight bg-cardBg rounded-2xl p-5'
       >
+        <div class='grid_pattern absolute inset-0'></div>
         <div class='h-full'>
           <img
             class='w-full h-full object-cover rounded-2xl'
@@ -34,9 +38,11 @@ import Link from "../Link.astro";
         </div>
       </div>
 
+      <!-- card 3 -->
       <div
-        class='order-5 laptop:order-3 w-full h-[360px] ring-1 ring-borderLight bg-cardBg rounded-2xl p-5 flex flex-col justify-between'
+        class='relative order-5 laptop:order-3 w-full h-[360px] ring-1 ring-borderLight bg-cardBg rounded-2xl p-5 flex flex-col justify-between'
       >
+        <div class='grid_pattern absolute inset-0'></div>
         <div>
           <h3 class='text-2xl mb-8'>Good Cooperation</h3>
           <p class='text-gray leading-normal'>
@@ -51,9 +57,11 @@ import Link from "../Link.astro";
         />
       </div>
 
+      <!-- card 4 -->
       <div
-        class='order-2 laptop:order-4 w-full h-[360px] col-start-1 col-span-2 ring-1 ring-borderLight bg-cardBg rounded-2xl p-5 flex flex-col justify-between'
+        class='relative order-2 laptop:order-4 w-full h-[360px] col-start-1 col-span-2 ring-1 ring-borderLight bg-cardBg rounded-2xl p-5 flex flex-col justify-between'
       >
+        <div class='grid_pattern absolute inset-0'></div>
         <div>
           <h3 class='text-2xl mb-8'>Development</h3>
           <p class='text-gray leading-normal max-w-[460px]'>
@@ -98,11 +106,13 @@ import Link from "../Link.astro";
         </div>
       </div>
 
+      <!-- card 5 -->
       <div
         class='order-4 laptop:order-5 w-full tablet:h-[360px] flex flex-col tablet:flex-row justify-between gap-5 col-span-2 ring-1 ring-borderLight bg-cardBg rounded-2xl p-5'
       >
-        <div class='basis-2/5 flex flex-col justify-between'>
-          <div>
+        <div class='relative basis-2/5 flex flex-col justify-between'>
+          <div class='grid_pattern absolute inset-0'></div>
+          <div class=''>
             <h3 class='text-2xl mb-8'>Field of View</h3>
             <p class='text-gray leading-normal mb-8 tablet:mb-0'>
               Ich teste Ihre Webseite auf einer Vielzahl von mobilen Geräten, um

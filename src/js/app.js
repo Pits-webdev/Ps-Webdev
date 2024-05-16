@@ -27,5 +27,15 @@ splitText(elements);
 
 const tl = gsap.timeline();
 tl.to(".logo_loader", { y: 0, delay: 0.1, duration: 0.2 });
-tl.to(".loader .char", { y: 0, stagger: 0.05, delay: 0.3, duration: 0.2 });
-tl.to(".page_loader", { y: "-100%", duration: 0, delay: 1.2 });
+tl.to(".loader .char", {
+  y: 0,
+  stagger: 0.05,
+  delay: 0.3,
+  duration: 0.2,
+});
+tl.to(".page_loader", {
+  y: "-100%",
+  duration: 0,
+  delay: 1.2,
+  ease: "expo.out",
+});
