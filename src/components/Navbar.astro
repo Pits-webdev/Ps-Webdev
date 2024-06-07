@@ -48,22 +48,26 @@ import MobileNav from "./MobileNav.astro";
         class='w-fit mx-auto flex gap-x-16 justify-center ring-1 ring-borderLight px-8 py-4 rounded-2xl'
       >
         <Link
-          BtnStyle='text-white bg-background  py-1 rounded-2xl '
+          BtnStyle='text-white bg-background  py-1 rounded-2xl'
+          BtnStyleActive='text-accent bg-background  py-1 rounded-2xl'
           title='Startseite'
           path='/'
         />
         <Link
           BtnStyle='text-white bg-background py-1 rounded-2xl '
+          BtnStyleActive='text-accent bg-background  py-1 rounded-2xl'
           title='Leistungen'
           path='/leistungen'
         />
         <Link
           BtnStyle='text-white bg-background  py-1 rounded-2xl '
+          BtnStyleActive='text-accent bg-background  py-1 rounded-2xl'
           title='Referenzen'
           path='/referenzen'
         />
         <Link
           BtnStyle='text-white bg-background  py-1 rounded-2xl '
+          BtnStyleActive='text-accent bg-background  py-1 rounded-2xl'
           title='Über mich'
           path='/ueber-mich'
         />
@@ -73,6 +77,7 @@ import MobileNav from "./MobileNav.astro";
     <div class='hidden flex-1 laptop:flex justify-end'>
       <Link
         BtnStyle='text-black bg-accent px-8 py-1 rounded-2xl ring-1 ring-accent'
+        BtnStyleActive='text-black bg-accent px-8 py-1 rounded-2xl ring-1 ring-accent'
         title='Kontakt'
         path='/kontakt'
       />

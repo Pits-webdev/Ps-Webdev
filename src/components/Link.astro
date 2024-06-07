@@ -1,8 +1,15 @@
 ---
-const { BtnStyle, title, path } = Astro.props;
+const pathname = new URL(Astro.url).pathname;
+console.log(pathname);
+
+const { BtnStyle, BtnStyleActive, title, path } = Astro.props;
 ---
 
-<a class=`link ${BtnStyle}` href={path}>{title}</a>
+<!-- <a class=`link ${BtnStyle}` href={path}>{title}</a> -->
+<a
+  class={pathname === path ? `link ${BtnStyleActive} ` : `link ${BtnStyle}`}
+  href={path}>{title}</a
+>
 
 <script>
   const link = document.querySelectorAll(".link");
