@@ -1,0 +1,97 @@
+---
+
+---
+
+<section class='w-full h-full mt-36'>
+  <div class='container'>
+    <div class='accordion flex flex-col gap-y-8'>
+      <!--  item -->
+      <div class='accordion-item border-b border-b-borderLight pb-6 px-5'>
+        <div class='accordion-header flex items-center justify-between mb-4'>
+          <h4>Webdesign</h4>
+          <button class='icon-btn'>x</button>
+        </div>
+        <div
+          class='accordion-content bg-gray-100 h-0 overflow-hidden transition-height duration-300 ease-in-out'
+        >
+          <p class=''>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+            expedita sint laudantium ut doloremque molestias pariatur, impedit
+            harum, sequi blanditiis voluptates. Corporis delectus possimus
+            necessitatibus. Officia, dolor quaerat minima esse odio ipsam
+            consectetur consequuntur.
+          </p>
+        </div>
+      </div>
+      <!--  item -->
+      <div class='accordion-item border-b border-b-borderLight pb-6 px-5'>
+        <div class='accordion-header flex items-center justify-between mb-4'>
+          <h4>Webdesign</h4>
+          <button class='icon-btn'>x</button>
+        </div>
+        <div
+          class='accordion-content bg-gray-100 h-0 overflow-hidden transition-height duration-300 ease-in-out'
+        >
+          <p class=''>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+      <!--  item -->
+      <div class='accordion-item border-b border-b-borderLight pb-6 px-5'>
+        <div class='accordion-header flex items-center justify-between mb-4'>
+          <h4>Webdesign</h4>
+          <button class='icon-btn'>x</button>
+        </div>
+        <div
+          class='accordion-content bg-gray-100 h-0 overflow-hidden transition-height duration-300 ease-in-out'
+        >
+          <p class=''>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+            expedita sint laudantium ut doloremque molestias pariatur, impedit
+            harum, sequi blanditiis voluptates. Corporis delectus possimus
+            necessitatibus.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .auto_h {
+      height: 96px;
+      /* height style auto */
+    }
+  </style>
+
+  <script>
+    const accordionItems = document.querySelectorAll(".accordion-item");
+
+    accordionItems.forEach((item) => {
+      const header = item.querySelector(".icon-btn");
+      const content = item.querySelector(".accordion-content");
+
+      header.addEventListener("click", () => {
+        // close other items
+        accordionItems.forEach((otherItem) => {
+          if (otherItem !== item && otherItem.classList.contains("active")) {
+            otherItem.classList.remove("active");
+            const body = otherItem.querySelector(".accordion-content");
+            body.classList.add("h-0");
+            body.classList.remove("auto_h");
+          }
+        });
+
+        item.classList.toggle("active");
+
+        if (item.classList.contains("active")) {
+          content.classList.remove("h-0");
+          content.classList.add("auto_h");
+        } else {
+          content.classList.add("h-0");
+          content.classList.remove("auto_h");
+        }
+      });
+    });
+  </script>
+</section>
